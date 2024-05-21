@@ -19,10 +19,13 @@ emitIndex(index:number):void{
 }
 
 @Output()
-public onDeleteCharacter:EventEmitter<number>=new EventEmitter();
+public onDeleteCharacter:EventEmitter<string>=new EventEmitter();
 
-emitDeleteIndex(index:number):void{
-  this.onDeleteCharacter.emit(index);
+//emitDeleteIndex(index:number):void{
+// this.onDeleteCharacter.emit(index);
+//}
+emitDeleteId(id?:string):void{
+  if(!id){return;}
+  this.onDeleteCharacter.emit(id);
 }
-
 }
