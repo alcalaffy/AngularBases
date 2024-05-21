@@ -15,7 +15,6 @@ public characters:Character[]=[{
 }];
 
 emitIndex(index:number):void{
-  console.log({index});
 }
 
 @Output()

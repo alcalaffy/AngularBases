@@ -15,7 +15,6 @@ export class DbzService {
 
   onNewCharacter(character:Character):void{
     let newCharacter:Character={id:uuid(),...character};
-    console.log('newCharacter: ',newCharacter)
     this.characters.push(newCharacter);
   }
 

@@ -15,7 +15,6 @@ export class DBZComponent  {
   }
 
   onDeleteCharacter(id:string):void{
-    console.log('id: ',id);
     this.dbzComponent.deleteCharacterById(id);
   }
 
